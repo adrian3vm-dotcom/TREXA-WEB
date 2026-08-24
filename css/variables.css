@@ -1,0 +1,16 @@
+:root {
+
+    --black: #1A1A1A;
+    --gray: #505050;
+    --light-gray: #D9D9D9;
+
+    --green: #6ABF4A;
+    --green-dark: #567F3A;
+
+    --white: #F8F8F6;
+
+    --max-width: 1440px;
+
+    --ease: cubic-bezier(.22,1,.36,1);
+
+}

@@ -1,0 +1,94 @@
+/* =========================================================
+   SECCIONES GENERALES
+   ========================================================= */
+
+.solutions,
+.process,
+.industries,
+.about {
+    padding: 120px 0;
+    background: var(--white);
+}
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--green-dark);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.eyebrow span {
+    font-size: 10px;
+}
+
+.eyebrow div {
+    width: 36px;
+    height: 1px;
+    background: currentColor;
+}
+
+.eyebrow.light {
+    color: #B9D59F;
+}
+
+/* =========================================================
+   BOTONES
+   ========================================================= */
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    gap: 22px;
+    min-height: 48px;
+    padding: 5px 5px 5px 18px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 600;
+    transition:
+        transform .3s ease,
+        background .3s ease;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+.button span {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.button span i {
+    font-size: 16px;
+}
+
+.dark-button {
+    background: var(--black);
+    color: white;
+}
+
+.dark-button span {
+    background: var(--green);
+    color: var(--black);
+}
+
+.green-button {
+    background: var(--green);
+    color: var(--black);
+}
+
+.green-button span {
+    background: white;
+}
+

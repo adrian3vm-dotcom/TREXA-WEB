@@ -1,0 +1,235 @@
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+
+    min-height: 100svh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    color: white;
+
+    overflow: hidden;
+
+}
+
+
+.hero-background {
+    position: absolute;
+    inset: 0;
+
+    background:
+        url("/images/herotx.jpg")
+        center center / cover;
+
+    transform: scale(1.04);
+}
+
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(10,15,10,.78),
+            rgba(10,15,10,.15)
+        );
+
+}
+
+
+/* =========================================================
+   HERO CONTENIDO
+   ========================================================= */
+
+.hero-content {
+
+    width: min(
+        calc(100% - 120px),
+        var(--max-width)
+    );
+
+    margin: 0 auto;
+
+    position: relative;
+
+    z-index: 5;
+
+    padding-top: 70px;
+
+}
+
+
+.hero h1 {
+
+    font-size: clamp(
+        48px,
+        6.1vw,
+        92px
+    );
+
+    line-height: .98;
+
+    letter-spacing: -.055em;
+
+    font-weight: 600;
+
+    margin:
+
+        26px
+        0
+        28px;
+
+    max-width: 1000px;
+
+}
+
+
+.hero h1 em {
+
+    color: var(--green);
+
+    font-style: normal;
+
+}
+
+
+.hero p {
+
+    max-width: 430px;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    color:
+
+        rgba(
+            255,
+            255,
+            255,
+            .78
+        );
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =========================================================
+   HERO SCROLL
+   ========================================================= */
+
+.hero-scroll {
+
+    position: absolute;
+
+    left: 34px;
+
+    bottom: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    writing-mode: vertical-rl;
+
+    font-size: 8px;
+
+    letter-spacing: .18em;
+
+    color:
+
+        rgba(
+            255,
+            255,
+            255,
+            .7
+        );
+
+    z-index: 5;
+
+}
+
+
+.hero-scroll div {
+
+    width: 1px;
+
+    height: 60px;
+
+    background:
+
+        rgba(
+            255,
+            255,
+            255,
+            .5
+        );
+
+}
+
+
+/* =========================================================
+   HERO DOTS
+   ========================================================= */
+
+.hero-dots {
+
+    position: absolute;
+
+    right: 28px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    display: grid;
+
+    gap: 12px;
+
+    z-index: 5;
+
+}
+
+
+.hero-dots span {
+
+    width: 6px;
+    height: 6px;
+
+    border:
+
+        1px solid
+        white;
+
+    border-radius: 50%;
+
+    opacity: .6;
+
+}
+
+
+.hero-dots .active {
+
+    background: var(--green);
+
+    border-color: var(--green);
+
+    opacity: 1;
+
+}

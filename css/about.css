@@ -1,0 +1,179 @@
+/* =========================================================
+   NOSOTROS
+   ========================================================= */
+
+.about {
+
+    min-height: 750px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================================
+   IMAGEN
+   ========================================================= */
+
+.about-image {
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 45%;
+
+    background-image: url("../images/about-trexa.jpg");
+
+    background-position: center;
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+}
+
+
+/* =========================================================
+   CONTENIDO
+   ========================================================= */
+
+.about-content {
+
+    margin-left: auto;
+
+    width: min(
+        calc(55% - 80px),
+        650px
+    );
+
+    margin-right: 150px;
+
+    transform: translateY(-0px);
+
+}
+
+/* =========================================================
+   TITULO
+   ========================================================= */
+
+.about-content h2 {
+
+    font-size: clamp(
+        40px,
+        4.5vw,
+        66px
+    );
+
+    line-height: 1.02;
+
+    letter-spacing: -.055em;
+
+    font-weight: 500;
+
+    margin:
+        0
+        0
+        35px;
+
+}
+
+
+.about-content h2 em {
+
+    color: var(--green-dark);
+
+    font-style: normal;
+
+}
+
+
+/* =========================================================
+   TEXTO
+   ========================================================= */
+
+.about-content p {
+
+    font-size: 13px;
+
+    line-height: 1.9;
+
+    color: var(--gray);
+
+    max-width: 520px;
+
+    margin-bottom: 24px;
+
+}
+.about-badge{
+    display:flex;
+    align-items:center;
+    gap:14px;
+
+    margin:30px 0 24px;
+
+    font-size:15px;
+    font-weight:500;
+
+    color:#505050;
+
+    transform: translateY(45px);
+}
+
+.about-badge img {
+    width: 60px;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.about-content .button {
+    transform: translateY(45px);
+}
+
+/* =========================================================
+   BOTON
+   ========================================================= */
+
+.about-content .button {
+
+    margin-top: 18px;
+
+}
+
+@media (min-width: 1200px) {
+
+    .about {
+        position: relative;
+        min-height: 750px;
+    }
+
+    .about-image {
+        left: 0;
+        width: 45%;
+    }
+
+    .about-content {
+        width: 55%;
+        max-width: none;
+
+        margin-left: 45%;
+        margin-right: 0;
+
+        padding-left: 80px;
+        padding-right: 100px;
+
+        box-sizing: border-box;
+
+        transform: translateY(-20px);
+    }
+
+}

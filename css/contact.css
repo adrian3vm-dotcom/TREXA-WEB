@@ -1,0 +1,315 @@
+/* =========================================================
+   CONTACTO
+   ========================================================= */
+
+.contact {
+
+    min-height: 75svh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    color: white;
+
+    overflow: hidden;
+
+}
+
+
+.contact-background {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        url(
+            "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=2200&q=85"
+        )
+        center / cover;
+
+}
+
+
+.contact-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8,12,8,.88),
+            rgba(8,12,8,.45)
+        );
+
+}
+
+
+/* =========================================================
+   CONTENEDOR
+   ========================================================= */
+.contact-container {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 0 60px;
+
+    box-sizing: border-box;
+
+    display: grid;
+
+    grid-template-columns: 1fr 480px;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+/* =========================================================
+   INFORMACIÓN
+   ========================================================= */
+
+.contact-info h2 {
+    font-size: clamp(
+        48px,
+        5.5vw,
+        78px
+    );
+
+    line-height: .95;
+
+    letter-spacing: -.06em;
+
+    font-weight: 500;
+
+    margin:
+        0
+        0
+        20px;
+
+}
+
+
+.contact-info p {
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            .7
+        );
+
+    font-size: 15px;
+
+    margin: 0;
+
+}
+
+
+/* =========================================================
+   FORMULARIO
+   ========================================================= */
+
+.contact-form {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap: 20px;
+
+    padding: 32px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            .96
+        );
+
+    border-radius: 8px;
+
+    color: #1A1A1A;
+
+}
+
+
+.form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+}
+
+
+.form-group.full {
+
+    grid-column:
+        1 / -1;
+
+}
+
+
+.form-group label {
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: #505050;
+
+}
+
+
+.form-group input,
+.form-group textarea {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: none;
+
+    border-bottom:
+        1px solid #D9D9D9;
+
+    background: transparent;
+
+    padding:
+        10px
+        0;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    color: #1A1A1A;
+
+    outline: none;
+
+}
+
+
+.form-group textarea {
+
+    resize: vertical;
+
+    min-height: 90px;
+
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+
+    border-bottom-color:
+        var(--green);
+
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+
+    color: #999;
+
+}
+
+
+/* =========================================================
+   BOTÓN
+   ========================================================= */
+
+.contact-form .button {
+
+    grid-column:
+        1 / -1;
+
+    justify-self: start;
+
+    border: none;
+
+    cursor: pointer;
+
+    margin-top: 5px;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .contact {
+
+        padding:
+            80px
+            0;
+
+    }
+
+    .contact-container {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 45px;
+
+    }
+
+    .contact-form {
+
+        width: 100%;
+
+        box-sizing: border-box;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-form {
+
+        grid-template-columns:
+            1fr;
+
+        padding: 25px;
+
+    }
+
+    .form-group.full {
+
+        grid-column:
+            auto;
+
+    }
+
+    .contact-form .button {
+
+        grid-column:
+            auto;
+
+    }
+
+}

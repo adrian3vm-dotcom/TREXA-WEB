@@ -1,0 +1,146 @@
+/* =========================================================
+   TREXA ENTRA
+   ========================================================= */
+
+.trexa-enters {
+    min-height: 85svh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+    background: var(--black);
+    overflow: hidden;
+}
+
+.trexa-background {
+    position: absolute;
+    inset: 0;
+
+    background:
+    radial-gradient(
+        circle at 80% 50%,
+        rgba(106,143,74,.15),
+        transparent 35%
+    ),
+    #0B0B0B;
+}
+.trexa-background::after {
+    display: none;
+}
+
+.trexa-grid{
+    display:none;
+
+
+    background-image:
+        linear-gradient(
+            rgba(106,191,74,.35) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(106,191,74,.35) 1px,
+            transparent 1px
+        );
+
+    background-size: 70px 70px;
+}
+
+.trexa-enters h2 {
+    max-width: 1200px;
+
+    margin: 28px 0;
+
+    font-size: clamp(
+        42px,
+        5vw,
+        78px
+    );
+
+    line-height: 1;
+    letter-spacing: -.055em;
+    font-weight: 500;
+    
+}
+
+.trexa-enters p {
+    color: rgba(255,255,255,.75);
+
+    font-size: 13px;
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+.trexa-enters em {
+    display: block;
+
+    color: var(--green);
+
+    font-style: normal;
+}
+
+.text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #C6DAB7;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* =========================================================
+   RADAR
+   ========================================================= */
+
+.radar {
+    position: absolute;
+
+    right: 8%;
+    top: 48%;
+
+    width: 250px;
+    height: 250px;
+
+    border: 1px solid rgba(106,191,74,.4);
+    border-radius: 50%;
+}
+
+.radar-circle {
+    position: absolute;
+
+    border: 1px solid rgba(106,191,74,.45);
+    border-radius: 50%;
+}
+
+.circle-one {
+    inset: 20%;
+}
+
+.circle-two {
+    inset: 35%;
+}
+
+.circle-three {
+    inset: 49%;
+}
+
+.radar > span {
+    position: absolute;
+
+    width: 8px;
+    height: 8px;
+
+    background: var(--green);
+
+    border-radius: 50%;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    box-shadow: 0 0 20px var(--green);
+}

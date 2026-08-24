@@ -1,0 +1,104 @@
+/* =========================================================
+   RESULTS
+   ========================================================= */
+
+.results {
+    min-height: 80svh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+
+.results-background {
+    position: absolute;
+    inset: 0;
+    background:
+        url("https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=2200&q=80")
+        center / cover;
+}
+
+.results-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8,12,8,.90),
+            rgba(8,12,8,.45)
+        );
+}
+
+.results h2 {
+    font-size: clamp(
+        42px,
+        5vw,
+        76px
+    );
+
+    line-height: 1;
+    letter-spacing: -.055em;
+    font-weight: 500;
+
+    margin:
+        30px
+        0
+        80px;
+}
+
+.statistics {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            1fr
+        );
+
+    gap: 50px;
+
+    max-width: 1000px;
+}
+
+.statistics > div {
+    border-top:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            .25
+        );
+
+    padding-top: 20px;
+}
+
+.statistics strong {
+    display: block;
+
+    font-size: clamp(
+        45px,
+        6vw,
+        80px
+    );
+
+    letter-spacing: -.05em;
+    font-weight: 500;
+}
+
+.statistics span {
+    display: block;
+
+    font-size: 10px;
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            .62
+        );
+
+    margin-top: 8px;
+}

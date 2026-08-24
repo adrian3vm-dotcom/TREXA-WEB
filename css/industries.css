@@ -1,0 +1,203 @@
+
+/* =========================================================
+   INDUSTRIAS
+   ========================================================= */
+
+.industry-grid {
+
+    display: grid;
+
+    grid-template-columns:
+
+        repeat(
+            5,
+            1fr
+        );
+
+    gap: 9px;
+
+}
+
+
+.industry {
+
+    min-height: 620px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 6px;
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+
+    transition:
+
+        transform .5s
+        var(--ease);
+
+}
+
+
+.industry:hover {
+
+    transform: translateY(-7px);
+
+}
+
+
+.industry::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background-size: cover;
+
+    background-position: center;
+
+    transition:
+
+        transform .9s
+        var(--ease);
+
+}
+
+
+.industry:hover::before {
+
+    transform: scale(1.08);
+
+}
+
+
+.mining::before {
+    background-image: url("/images/mineria.jpg");
+}
+
+.automotive::before {
+    background-image: url("/images/automotriz.jpg");
+}
+
+.food::before {
+    background-image: url("/images/alimentos.jpg");
+}
+
+.water::before {
+    background-image: url("/images/agua.jpg");
+}
+
+.cleaning::before {
+    background-image: url("/images/limpieza.jpg");
+}
+
+.industry-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            rgba(0,0,0,.02),
+            rgba(0,0,0,.0)
+        );
+
+    z-index: 1;
+
+}
+
+
+.industry-content {
+
+    position: absolute;
+
+    z-index: 2;
+
+    left: 20px;
+    right: 20px;
+    bottom: 22px;
+
+}
+
+
+.industry-content > span {
+
+    color: #C5D9B8;
+
+    font-size: 9px;
+
+}
+
+
+.industry-content h3 {
+
+    font-size: 18px;
+
+    line-height: 1.05;
+
+    margin:
+
+        8px
+        0;
+
+}
+
+
+.industry-content p {
+
+    font-size: 9px;
+
+    line-height: 1.5;
+
+    color:
+
+        rgba(
+            255,
+            255,
+            255,
+            .7
+        );
+
+    max-height: 0;
+
+    opacity: 0;
+
+    overflow: hidden;
+
+    transition: .45s ease;
+
+}
+
+
+.industry:hover
+.industry-content p {
+
+    max-height: 60px;
+
+    opacity: 1;
+
+}
+
+
+.industry-content i {
+
+    position: absolute;
+
+    right: 0;
+
+    bottom: 0;
+
+    font-size: 18px;
+
+    color: var(--green);
+
+}

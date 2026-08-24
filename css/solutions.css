@@ -1,0 +1,177 @@
+/* =========================================================
+   SOLUCIONES
+   ========================================================= */
+
+.solution-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 18px;
+
+}
+
+.solution-card {
+
+    min-height: 510px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 5px;
+
+    background: #ECEDEA;
+
+}
+
+.solution-image {
+
+    position: absolute;
+
+    inset: 0;
+
+    background-size: cover;
+
+    background-position: center;
+
+    transition:
+        transform .8s
+        var(--ease);
+
+}
+
+.solution-card:hover .solution-image {
+
+    transform: scale(1.06);
+
+}
+
+.solution-image::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0,0,0,.15),
+            rgba(0,0,0,.85)
+        );
+
+}
+
+/* =========================================================
+   IMÁGENES
+   ========================================================= */
+
+.water {
+
+    background-image:
+        url("/images/tratamiento-agua.jpg");
+
+}
+
+.corrosion {
+
+    background-image:
+        url("/images/control-corrosion.jpg");
+
+}
+
+.scaling {
+
+    background-image:
+        url("/images/control-incrustacion.jpg");
+
+}
+
+.solution-industry {
+
+    background-image:
+        url("/images/procesos-industriales.jpg");
+
+}
+
+/* =========================================================
+   CONTENIDO
+   ========================================================= */
+
+.solution-content {
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 28px;
+
+    color: white;
+
+    z-index: 2;
+
+}
+
+.solution-content > span {
+
+    color: #BBD6A9;
+
+    font-size: 9px;
+
+    letter-spacing: .1em;
+
+}
+
+.solution-content h3 {
+
+    font-size: 28px;
+
+    letter-spacing: -.035em;
+
+    margin:
+        10px
+        0;
+
+}
+
+.solution-content p {
+
+    font-size: 11px;
+
+    line-height: 1.6;
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            .72
+        );
+
+    max-width: 430px;
+
+    margin-bottom: 20px;
+
+}
+
+.solution-content a {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    color: white;
+
+}
