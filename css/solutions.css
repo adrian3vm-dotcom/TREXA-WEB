@@ -73,28 +73,28 @@
 .water {
 
     background-image:
-        url("/images/tratamiento-agua.jpg");
+        url("../public/images/tratamiento-agua.jpg");
 
 }
 
 .corrosion {
 
     background-image:
-        url("/images/control-corrosion.jpg");
+        url("../public/images/control-corrosion.jpg");
 
 }
 
 .scaling {
 
     background-image:
-        url("/images/control-incrustacion.jpg");
+        url("../public/images/control-incrustacion.jpg");
 
 }
 
 .solution-industry {
 
     background-image:
-        url("/images/procesos-industriales.jpg");
+        url("../public/images/procesos-industriales.jpg");
 
 }
 

@@ -78,23 +78,23 @@
 
 
 .mining::before {
-    background-image: url("/images/mineria.jpg");
+    background-image: url("../public/images/mineria.jpg");
 }
 
 .automotive::before {
-    background-image: url("/images/automotriz.jpg");
+    background-image: url("../public/images/automotriz.jpg");
 }
 
 .food::before {
-    background-image: url("/images/alimentos.jpg");
+    background-image: url("../public/images/alimentos.jpg");
 }
 
 .water::before {
-    background-image: url("/images/agua.jpg");
+    background-image: url("../public/images/agua.jpg");
 }
 
 .cleaning::before {
-    background-image: url("/images/limpieza.jpg");
+    background-image: url("../public/images/limpieza.jpg");
 }
 
 .industry-overlay {
