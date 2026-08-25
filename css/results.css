@@ -25,13 +25,12 @@
     inset: 0;
 
     background:
-        url("../images/planta-agua-aerea.jpg")
+        url("/images/planta-agua-aerea.jpg")
         center center / cover no-repeat;
 
     transform: scale(1.03);
 
 }
-
 .results-overlay {
 
     position: absolute;
