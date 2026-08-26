@@ -4,7 +4,7 @@
 
 .contact {
 
-    min-height: 75svh;
+    min-height: 75vh;
 
     position: relative;
 
@@ -23,13 +23,19 @@
 
     position: absolute;
 
-    inset: 0;
+    top: 0;
+    left: 0;
 
-    background:
-        url(
-            "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=2200&q=85"
-        )
-        center / cover;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../public/images/contacto.png");
+
+    background-position: center;
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
 
 }
 
@@ -43,7 +49,6 @@
     background:
         linear-gradient(
             90deg,
-            rgba(8,12,8,.88),
             rgba(8,12,8,.45)
         );
 

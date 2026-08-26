@@ -565,55 +565,45 @@ function updateHeader() {
 
     animateCounters();
 
+/* =====================================================
+   CONTACTO PARALLAX
+===================================================== */
 
-    /* =====================================================
-       CONTACTO PARALLAX
-       ===================================================== */
+/*
+if (contactBackground) {
 
-    if (contactBackground) {
+    window.addEventListener(
+        "scroll",
+        () => {
 
-        window.addEventListener(
-            "scroll",
-            () => {
+            const section =
+                contactBackground.parentElement;
 
+            const rect =
+                section.getBoundingClientRect();
 
-                const section =
-                    contactBackground
-                        .parentElement;
+            if (
+                rect.bottom > 0 &&
+                rect.top < window.innerHeight
+            ) {
 
+                const movement =
+                    (window.innerHeight - rect.top) *
+                    0.035;
 
-                const rect =
-                    section.getBoundingClientRect();
+                contactBackground.style.transform =
+                    `scale(1.04) translateY(${movement}px)`;
 
-
-                if (
-                    rect.bottom > 0 &&
-                    rect.top <
-                    window.innerHeight
-                ) {
-
-
-                    const movement =
-                        (window.innerHeight -
-                        rect.top) *
-                        0.035;
-
-
-                    contactBackground.style.transform =
-                        `scale(1.04) translateY(${movement}px)`;
-
-
-                }
-
-
-            },
-            {
-                passive: true
             }
-        );
 
-    }
+        },
+        {
+            passive: true
+        }
+    );
 
+}
+*/
 
     /* =====================================================
        HOVER INDUSTRIAS
