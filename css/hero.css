@@ -26,7 +26,7 @@
     inset: 0;
 
     background:
-        url("../public/images/herotx.jpg")
+        url("../public/images/herotx.webp")
         center center / cover;
 
     transform: scale(1.04);
